@@ -25,7 +25,7 @@ def get_weather():
   return weather['weather'], math.floor(weather['temp']),math.floor(weather['low']),math.floor(weather['high'])
 
 def get_date():
-  a = ("{0:%Y}年{0:%m}月{0:%d}日".format(datetime.date(datetime.now())))
+  a = "{0:%Y}年{0:%m}月{0:%d}日".format(datetime.date(today))
   return a
 
 def get_count():
