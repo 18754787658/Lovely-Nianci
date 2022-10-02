@@ -8,7 +8,7 @@ import os
 import random
 
 c = datetime.timedelta(days=1)
-today = datetime.now()+c
+# today = datetime.now()+c
 start_date = os.environ['START_DATE']
 city = os.environ['CITY']
 birthday = os.environ['BIRTHDAY']
@@ -27,7 +27,7 @@ def get_weather():
   return weather['weather'], math.floor(weather['temp']),math.floor(weather['low']),math.floor(weather['high'])
 
 def get_date():
-  a = "{0:%Y}年{0:%m}月{0:%d}日".format(datetime.date(today))
+  a = "{0:%Y}年{0:%m}月{0:%d}日".format(datetime.datetime.now()+c)
   return a
 
 def get_count():
