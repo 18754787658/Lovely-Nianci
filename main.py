@@ -8,7 +8,7 @@ import os
 import random
 
 c = datetime.timedelta(days=1)
-# today = datetime.now()+c
+today = datetime.datetime.now()+c
 start_date = os.environ['START_DATE']
 city = os.environ['CITY']
 birthday = os.environ['BIRTHDAY']
